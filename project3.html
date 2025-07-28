@@ -15,7 +15,6 @@
 
     <link rel="icon" href="images/KV-ico.png" type="image/x-icon" />
 
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
 
@@ -107,9 +106,7 @@
                 ><a href="index.html#projects-section"
                   >Project <i class="ion-ios-arrow-forward"></i></a
               ></span>
-              <span class="mr-2"
-                ><a href="single.html"
-                  >My Projects</span>
+              <span class="mr-2"><a href="single.html">My Projects</a></span>
             </p>
           </div>
         </div>
@@ -121,93 +118,128 @@
         <div class="row">
           <div class="col-lg-12 ftco-animate">
             <h2 class="mb-3">
-              Predicting the Virulence of Bacterial Pathogens
+              Multi-Agent Simulation of Pit Stop Strategy Using Game Theory
             </h2>
             <p>
-              Predictive machine learning models assess bacterial virulence
-              based on ecological and transmission factors, with SHAP and LIME
-              plots used to interpret feature impact.
+              Blended Bayesian game theory with real F1 telemetry from FastF1
+              API to simulate and visualize pit stop strategies, enabling 36+
+              scenario analyses via an interactive dashboard with payoff
+              matrices, strategy flows, and live race simulations
             </p>
             <p>
               <img
-                src="images/High_Resolution_Screenshot.png"
-                alt=""
+                src="images/F1-Project.png"
+                alt="Power BI Dashboard"
                 class="img-fluid"
               />
             </p>
+
             <div class="project-description mt-5">
-              <h3 class="mb-4 text-white">📌 Project Summary</h3>
+              <h3 class="mb-4 text-white">📌 Project Overview</h3>
 
               <p class="text-light">
-                This project aimed to
-                <strong>predict the virulence of bacterial pathogens</strong>
-                using machine learning, focusing on ecological and
-                transmission-based features instead of traditional taxonomy.
+                The Multi-Agent Simulation of Pit Stop Strategy Using Game
+                Theory is a sophisticated strategic modeling tool that blends
+                Bayesian game theory with agent-based simulation to analyze and
+                optimize Formula 1 pit stop strategies. Conceived from the
+                high-stakes environment of the 2024 Spanish Grand Prix, the
+                project integrates real telemetry data—lap times, tire
+                compounds, and pit events—via the FastF1 API to simulate
+                decision-making between two competing teams, Ferrari and
+                McLaren. By embedding these competitive interactions into a
+                probabilistic multi-agent framework, the project reimagines pit
+                strategy not as a deterministic decision, but as a complex,
+                adaptive game with asymmetric information and evolving utilities
+              </p>
+
+              <h3 class="text-white mt-4">🛠️ Methodology & Implementation</h3>
+
+              <p class="text-light">
+                Technically, the simulation architecture is modular and
+                methodologically rigorous. At its core, Python scripts such as
+                <span class="text-info">agents.py</span>,
+                <span class="text-info">payoff_matrix.py</span>, and
+                <span class="text-info">payoff_matrix.py</span> encapsulate the
+                rational decision logic of teams through Bayesian reasoning and
+                matrix game analysis.
               </p>
 
               <p class="text-light">
-                The model leveraged factors like <em>tissue tropism</em>,
-                <em>mode of transmission</em>, and <em>transmissibility</em> to
-                determine severity. A dataset of
-                <strong>76 pathogens from 36 bacterial families</strong> was
-                analyzed using both binary and multi-level severity scales.
+                The race evolution is handled by
+                <span class="text-info">simulator.py</span>, which governs lap
+                progression and real-time agent interactions, while the
+                FastF1-powered
+                <span class="text-info">fast1_data_loader.py</span>
+                ensures real-world fidelity.
               </p>
 
               <p class="text-light">
-                Due to the limited sample size,
-                <strong>data upsampling techniques</strong> were used to ensure
-                statistical robustness. Then, four machine learning models—<span
-                  class="text-info"
-                  >SVM</span
-                >, <span class="text-info">Random Forest</span>,
-                <span class="text-info">Linear Regression</span>, and
-                <span class="text-info">Gradient Boosting</span>—were trained
-                and tested.
+                The project culminates in a dynamic, browser-based HTML
+                dashboard featuring interactive components: a Bayesian payoff
+                matrix, a Sankey flow visualization of strategic dominance, lap
+                time degradation charts, and a live race simulation controller.
+                These elements enable users to explore over 36 unique strategy
+                permutations, identify Nash equilibriums, and assess performance
+                deltas in real time
+              </p>
+
+              <h3 class="text-white mt-4">📊 Key Insights & Outcomes</h3>
+
+              <p class="text-light">
+                -The project’s key outcomes highlight both
+                <strong>strategic insights and analytical depth</strong>
               </p>
 
               <p class="text-light">
-                Among these,
-                <strong class="text-success">Random Forest stood out</strong>,
-                with impressive performance: <br />
-                <span class="text-warning">Precision:</span> 0.93,
-                <span class="text-warning">Recall:</span> 0.96,
-                <span class="text-warning">F1-score:</span> 0.94,
-                <span class="text-warning">AUC:</span> 0.984.
+                -Users can instantly simulate what-if scenarios— such as the
+                advantage of undercutting on Lap 11 versus pitting under a
+                safety car— and observe their outcomes through
+                <span class="text-info"> color-coded payoff matrices </span> and
+                <span class="text-info"> animated race flows</span>
               </p>
 
               <p class="text-light">
-                For transparency and interpretability, tools like
-                <span class="text-info">SHAP</span> and
-                <span class="text-info">LIME</span> were used, enabling visual
-                analysis of feature impact. The models identified
-                <strong>systemic infection traits</strong> and
-                <strong>indirect transmission modes</strong> as strong
-                predictors of virulence.
+                -Notably, the tool identifies optimal responses to rival moves,
+                quantifies expected gains (e.g., Ferrari gains +3.1s when
+                undercutting versus McLaren’s Lap 13 pit), and exposes
+                risk-dominant or regret-prone decisions
               </p>
 
               <p class="text-light">
-                This project proved that virulence prediction is a
-                <em>multifactorial challenge</em>, not solely determined by
-                taxonomy. The insights have strong potential for application in
-                diagnostics, surveillance, and clinical decision-making.
+                -Visualizations such as the Lap Time Analyzer reveal tire
+                degradation trends and performance inflections, while the Sankey
+                diagram interprets advantage transfer across strategic states<br />
+              </p>
+
+              <h3 class="text-white mt-4">🚀 Future Enhancements</h3>
+              <p class="text-light">
+                By combining rigorous modeling with intuitive visualization, the
+                project not only delivers a novel analytical platform for
+                motorsport strategy but also sets a foundational framework for
+                future extensions into
+                <span class="text-info">Monte Carlo simulations</span>,
+                <span class="text-info">weather-based modeling</span>, and
+                <span class="text-info">multi-team decision environments</span>
               </p>
             </div>
 
             <div>
               <h3 class="heading-sidebar">Skills Used</h3>
               <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">Data visualization</a>
-                <a href="#" class="tag-cloud-link">Feature Selection</a>
-                <a href="#" class="tag-cloud-link">Machine learning Model Development and validation</a>
-                <a href="#" class="tag-cloud-link">Python</a>
-                <a href="#" class="tag-cloud-link">Jupyter Notebook</a>
+                <a href="#" class="tag-cloud-link">FastF1 API</a>
+                <a href="#" class="tag-cloud-link"
+                  >Bayesian Game Theory Modeling</a
+                >
+                <a href="#" class="tag-cloud-link">Pydash </a>
+                <a href="#" class="tag-cloud-link">Python </a>
+                <a href="#" class="tag-cloud-link">HTML/JavaScript</a>
               </div>
             </div>
           </div>
-          <!-- .col-md-8 -->
         </div>
       </div>
     </section>
+
     <!-- .section -->
 
     <!-- loader -->
