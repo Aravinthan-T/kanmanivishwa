@@ -100,7 +100,13 @@
                 ><a href="index.html"
                   >Home <i class="ion-ios-arrow-forward"></i></a
               ></span>
-              <span class="mr-2"><a href="blog.html">Project </a></span>
+              <span class="mr-2"
+                ><a href="index.html#projects-section"
+                  >Project <i class="ion-ios-arrow-forward"></i></a
+              ></span>
+              <span class="mr-2"
+                ><a href="single.html"
+                  >My Projects</span>
             </p>
           </div>
         </div>
@@ -126,25 +132,72 @@
                 class="img-fluid"
               />
             </p>
-            <p>
-              Molestiae cupiditate inventore animi, maxime sapiente optio, illo
-              est nemo veritatis repellat sunt doloribus nesciunt! Minima
-              laborum magni reiciendis qui voluptate quisquam voluptatem soluta
-              illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti
-              tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor
-              minima esse vero ut ea, repudiandae suscipit!
-            </p>
+            <div class="project-description mt-5">
+              <h3 class="mb-4 text-white">📌 Project Summary</h3>
+
+              <p class="text-light">
+                This project aimed to
+                <strong>predict the virulence of bacterial pathogens</strong>
+                using machine learning, focusing on ecological and
+                transmission-based features instead of traditional taxonomy.
+              </p>
+
+              <p class="text-light">
+                The model leveraged factors like <em>tissue tropism</em>,
+                <em>mode of transmission</em>, and <em>transmissibility</em> to
+                determine severity. A dataset of
+                <strong>76 pathogens from 36 bacterial families</strong> was
+                analyzed using both binary and multi-level severity scales.
+              </p>
+
+              <p class="text-light">
+                Due to the limited sample size,
+                <strong>data upsampling techniques</strong> were used to ensure
+                statistical robustness. Then, four machine learning models—<span
+                  class="text-info"
+                  >SVM</span
+                >, <span class="text-info">Random Forest</span>,
+                <span class="text-info">Linear Regression</span>, and
+                <span class="text-info">Gradient Boosting</span>—were trained
+                and tested.
+              </p>
+
+              <p class="text-light">
+                Among these,
+                <strong class="text-success">Random Forest stood out</strong>,
+                with impressive performance: <br />
+                <span class="text-warning">Precision:</span> 0.93,
+                <span class="text-warning">Recall:</span> 0.96,
+                <span class="text-warning">F1-score:</span> 0.94,
+                <span class="text-warning">AUC:</span> 0.984.
+              </p>
+
+              <p class="text-light">
+                For transparency and interpretability, tools like
+                <span class="text-info">SHAP</span> and
+                <span class="text-info">LIME</span> were used, enabling visual
+                analysis of feature impact. The models identified
+                <strong>systemic infection traits</strong> and
+                <strong>indirect transmission modes</strong> as strong
+                predictors of virulence.
+              </p>
+
+              <p class="text-light">
+                This project proved that virulence prediction is a
+                <em>multifactorial challenge</em>, not solely determined by
+                taxonomy. The insights have strong potential for application in
+                diagnostics, surveillance, and clinical decision-making.
+              </p>
+            </div>
+
             <div>
-              <h3 class="heading-sidebar">Technologies Used</h3>
+              <h3 class="heading-sidebar">Skills Used</h3>
               <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">house</a>
-                <a href="#" class="tag-cloud-link">office</a>
-                <a href="#" class="tag-cloud-link">building</a>
-                <a href="#" class="tag-cloud-link">land</a>
-                <a href="#" class="tag-cloud-link">table</a>
-                <a href="#" class="tag-cloud-link">interior</a>
-                <a href="#" class="tag-cloud-link">exterior</a>
-                <a href="#" class="tag-cloud-link">industrial</a>
+                <a href="#" class="tag-cloud-link">Data visualization</a>
+                <a href="#" class="tag-cloud-link">Feature Selection</a>
+                <a href="#" class="tag-cloud-link">Machine learning Model Development and validation</a>
+                <a href="#" class="tag-cloud-link">Python</a>
+                <a href="#" class="tag-cloud-link">Jupyter Notebook</a>
               </div>
             </div>
           </div>
