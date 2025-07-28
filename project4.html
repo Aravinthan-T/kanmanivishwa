@@ -117,157 +117,132 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 ftco-animate">
-            <h2 class="mb-3">Data Engineering YouTube Analysis Project</h2>
-            <p>
-              Designed a scalable, cloud-native pipeline using AWS services to
-              transform and analyze YouTube trending data, enabling dynamic
-              dashboards with insights on engagement patterns, regional
-              virality, and category performance
+            <h2 class="mb-3">
+              Cloud-Native Data Engineering Pipeline for YouTube Trending Video
+              Analysis
+            </h2>
+            <p class="lead text-light">
+              Built an end-to-end, scalable, and serverless data pipeline on AWS
+              to ingest, transform, and visualize global YouTube trending video
+              data for real-time business insights.
             </p>
             <p>
               <img
                 src="images/dataEngg.png"
-                alt="Power BI Dashboard"
+                alt="YouTube Data Engineering Pipeline"
                 class="img-fluid"
               />
             </p>
 
             <div class="project-description mt-5">
-              <!-- <h3 class="mb-4 text-white">📌 Project Overview</h3> -->
+              <h3 class="mb-4 text-white">📌 Project Objective</h3>
 
               <p class="text-light">
-                This project was conceived to address the growing demand for
-                scalable, cloud-native data engineering solutions capable of
-                ingesting, processing, and analyzing massive volumes of YouTube
-                trending video data. Recognizing the fragmented nature of
-                structured and semi-structured datasets—particularly JSON-based
-                public YouTube metrics—the project focuses on developing an
-                end-to-end, cloud-based pipeline that transforms raw video data
-                into actionable business insights.
+                With the rising demand for cloud-based video analytics, this
+                project focused on creating a fully automated pipeline to
+                convert raw, semi-structured YouTube data (in JSON format) into
+                structured insights. The goal: empower content creators,
+                marketers, and data analysts to uncover patterns in user
+                engagement, video virality, and regional performance trends.
+              </p>
+
+              <h3 class="text-white mt-4">🛠️ Solution Architecture</h3>
+              <p class="text-light">
+                The pipeline was designed using a modular, serverless stack of
+                AWS services:
+              </p>
+              <ul class="text-light">
+                <li>
+                  <strong>Amazon S3</strong> – Data Lake with partitioned raw,
+                  cleansed, and analytics zones
+                </li>
+                <li>
+                  <strong>AWS Glue</strong> – Schema evolution, transformation,
+                  and deduplication
+                </li>
+                <li>
+                  <strong>AWS Lambda</strong> – Event-driven JSON to Parquet
+                  conversion
+                </li>
+                <li>
+                  <strong>AWS Athena</strong> – Interactive querying on cleansed
+                  datasets
+                </li>
+                <li>
+                  <strong>Amazon QuickSight / Power BI</strong> – Visualization
+                  and dashboarding
+                </li>
+                <li>
+                  <strong>IAM & CloudWatch</strong> – Role-based access control
+                  and monitoring
+                </li>
+                <li>
+                  <strong>Amazon Redshift (optional)</strong> – Advanced
+                  analytics on large volumes
+                </li>
+              </ul>
+
+              <h3 class="text-white mt-4">📊 Key Insights Delivered</h3>
+              <ul class="text-light">
+                <li>
+                  Dynamic dashboards highlighting total views, likes, dislikes,
+                  and virality index
+                </li>
+                <li>
+                  Region and category-based filters (e.g., Music, Gaming,
+                  Entertainment)
+                </li>
+                <li>
+                  Time series plots identifying seasonal engagement trends
+                </li>
+                <li>
+                  Revealed that videos with comments enabled show higher
+                  engagement rates
+                </li>
+                <li>
+                  Identified geographic virality in genres like music (e.g.,
+                  Latin America & K-Pop)
+                </li>
+              </ul>
+
+              <h3 class="text-white mt-4">🚀 Strategic Impact</h3>
+              <p class="text-light">
+                By automating the ingestion and enrichment of large-scale video
+                data and delivering insights via cloud-native dashboards, the
+                project streamlined access to viewer behavior and performance
+                metrics. This helped stakeholders make informed decisions around
+                content strategies, regional promotions, and viewer engagement
+                optimization.
+              </p>
+
+              <h3 class="text-white mt-4">🔮 Future Enhancements</h3>
+              <p class="text-light">
+                - Integrate ML models for virality prediction and anomaly
+                detection<br />
+                - Add sentiment analysis on video comments<br />
+                - Expand support for real-time streaming ingestion and alerts
               </p>
 
               <p class="text-light">
-                The primary motivation was to empower content creators,
-                marketing strategists, and analysts with the ability to identify
-                engagement patterns, regional virality, and category-based
-                performance, leveraging modern cloud architecture for
-                reliability, scalability, and cost-effectiveness.
+                This project showcases how modern data engineering tools can
+                unlock actionable intelligence from messy web data and turn it
+                into strategic advantage in the digital media landscape.
               </p>
-
-              <p class="text-light">
-                The solution architecture leverages a suite of AWS services to
-                construct a modular, serverless pipeline encompassing data
-                ingestion, transformation, enrichment, storage, and
-                visualization. Amazon S3 serves as the foundational data lake,
-                with logically partitioned zones (raw, cleansed, analytics) to
-                manage lifecycle and access control.
-              </p>
-
-              <p class="text-light">
-                Data processing is orchestrated using AWS Glue for schema
-                evolution, deduplication, and transformation, alongside AWS
-                Lambda for real-time JSON-to-Parquet conversion and event-driven
-                processing. Query execution and data exploration are facilitated
-                through AWS Athena, while QuickSight and Power BI provide
-                dynamic dashboards for downstream visualization. The
-                architecture includes IAM for role-based access control,
-                CloudWatch for pipeline monitoring, and optional integration
-                with Redshift for high-performance analytical queries on large
-                datasets.
-              </p>
-
-              <p class="text-light">
-                Key analytical outputs include dynamic dashboards that visualize
-                metrics such as total views, likes, and virality index across
-                categories and regions. Advanced filters allow stakeholders to
-                drill down by country, video type, and comment status, while
-                time series plots reveal seasonal or time-bound shifts in viewer
-                engagement. A notable insight revealed that enabling comments
-                positively correlates with higher engagement rates, while
-                certain regions demonstrate disproportionate virality in
-                specific genres such as music or entertainment.
-              </p>
-
-              <p class="text-light">
-                By transforming noisy web data into a highly curated, queryable
-                format and delivering it through interactive BI tools, this
-                project illustrates the transformative potential of cloud-native
-                analytics in digital media intelligence. Future iterations may
-                incorporate machine learning models for predictive virality and
-                anomaly detection, enhancing strategic decision-making even
-                further
-              </p>
-
-              <!-- <h3 class="text-white mt-4">🛠️ Methodology & Implementation</h3>
-
-              <p class="text-light">
-                Technically, the simulation architecture is modular and methodologically rigorous. 
-                At its core, Python scripts such as
-                <span class="text-info">agents.py</span>,
-                <span class="text-info">payoff_matrix.py</span>, and
-                <span class="text-info">payoff_matrix.py</span> encapsulate 
-                the rational decision logic of teams 
-                through Bayesian reasoning and matrix game analysis. 
-                
-              </p>
-
-              <p class="text-light">
-                The race evolution is handled by 
-                <span class="text-info">simulator.py</span>,
-                which governs lap progression and real-time agent interactions, while the FastF1-powered 
-                <span class="text-info">fast1_data_loader.py</span>
-                ensures real-world fidelity. 
-
-              </p>
-
-              <p class="text-light">
-               The project culminates in a dynamic, browser-based HTML dashboard 
-               featuring interactive components: a Bayesian payoff matrix, 
-               a Sankey flow visualization of strategic dominance, lap time degradation charts, and a live race simulation controller. 
-               These elements enable users to explore over 36 unique strategy permutations, identify Nash equilibriums, and assess performance deltas in real time
-              </p>
-
-              
-
-              <h3 class="text-white mt-4">📊 Key Insights & Outcomes</h3>
-
-              <p class="text-light">
-                -The project’s key outcomes highlight both <strong>strategic insights and analytical depth</strong> 
-              </p>
-
-              <p class="text-light">
-                -Users can instantly simulate what-if scenarios—
-                such as the advantage of undercutting on Lap 11 versus pitting under a safety car—
-                and observe their outcomes through <span class="text-info"> color-coded payoff matrices </span> and <span class="text-info"> animated race flows</span>
-              </p>
-
-              <p class="text-light">
-                -Notably, the tool identifies optimal responses to rival moves, quantifies expected gains
-                (e.g., Ferrari gains +3.1s when undercutting versus McLaren’s Lap 13 pit), and exposes risk-dominant or regret-prone decisions
-              </p>
-
-              <p class="text-light">  
-                -Visualizations such as the Lap Time Analyzer reveal tire degradation trends and performance inflections, while the Sankey diagram interprets advantage transfer across strategic states<br>
-              </p>
-
-              <h3 class="text-white mt-4">🚀 Future Enhancements</h3>
-              <p class="text-light">
-                By combining rigorous modeling with intuitive visualization, 
-                the project not only delivers a novel analytical platform for motorsport strategy 
-                but also sets a foundational framework for future extensions into <span class="text-info">Monte Carlo simulations</span>, 
-                <span class="text-info">weather-based modeling</span>, and 
-                <span class="text-info">multi-team decision environments</span>
-              </p> -->
             </div>
 
             <div>
               <h3 class="heading-sidebar">Skills Used</h3>
               <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">AWS</a>
-                <a href="#" class="tag-cloud-link">PowerBI</a>
-                <a href="#" class="tag-cloud-link">ETL development</a>
-                <a href="#" class="tag-cloud-link">Data Lake engineering </a>
-                <a href="#" class="tag-cloud-link">Pytorch</a>
+                <a href="#" class="tag-cloud-link">AWS Glue</a>
+                <a href="#" class="tag-cloud-link">S3</a>
+                <a href="#" class="tag-cloud-link">Lambda</a>
+                <a href="#" class="tag-cloud-link">Athena</a>
+                <a href="#" class="tag-cloud-link">QuickSight</a>
+                <a href="#" class="tag-cloud-link">Power BI</a>
+                <a href="#" class="tag-cloud-link">Data Lake</a>
+                <a href="#" class="tag-cloud-link">ETL Pipeline</a>
+                <a href="#" class="tag-cloud-link">CloudWatch</a>
+                <a href="#" class="tag-cloud-link">JSON & Parquet</a>
               </div>
             </div>
           </div>
