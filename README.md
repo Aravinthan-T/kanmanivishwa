@@ -14,7 +14,6 @@ https://vishwaak.web.app
 - Services and Skills showcase
 - Projects section with visuals
 - Navigation menu for easy access
-- Contact section with form (optional)
 
 ---
 
