@@ -4,7 +4,7 @@ A portfolio/personal website built with HTML, CSS, Bootstrap, and JavaScript to 
 
 ## 🌐 Live Demo
 
-(https://vishwaak.web.app)(#)  
+https://vishwaak.web.app
 
 ---
 
