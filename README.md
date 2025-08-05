@@ -8,19 +8,6 @@ https://vishwaak.web.app
 
 ---
 
-## 📁 Project Structure
-kanmanivishwa/
-├── css/
-│ └── style.css
-├── js/
-│ └── main.js
-├── images/
-│ └── (image assets)
-├── index.html
-└── README.md
-
----
-
 ## 🚀 Features
 
 - Responsive design using Bootstrap
